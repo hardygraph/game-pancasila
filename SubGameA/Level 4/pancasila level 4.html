@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Edukasi Pancasila Level 4</title>
+    <link rel="stylesheet" href="pl4.css">
+</head>
+<body>
+    <div class="container">
+        <br>
+        <br>
+        <br>
+        <br>
+        <h1>Game Edukasi Pancasila - Level 4</h1>
+        <p>Cocokkan nama sila dengan deskripsi yang benar dan jawab pertanyaan berikut:</p>
+        <div class="game-container">
+            <div class="items">
+                <div draggable="true" class="item" data-sila="1">Ketuhanan yang Maha Esa</div>
+                <div draggable="true" class="item" data-sila="2">Kemanusiaan yang adil dan beradab</div>
+                <div draggable="true" class="item" data-sila="3">Persatuan Indonesia</div>
+                <div draggable="true" class="item" data-sila="4">Kerakyatan yang dipimpin oleh hikmat kebijaksanaan dalam permusyawaratan/perwakilan</div>
+                <div draggable="true" class="item" data-sila="5">Keadilan sosial bagi seluruh rakyat Indonesia</div>
+            </div>
+            <div class="descriptions">
+                <div class="description" data-sila="3">Mendahulukan kepentingan bangsa di atas kepentingan pribadi atau golongan.</div>
+                <div class="description" data-sila="2">Menghormati hak asasi manusia dan keadilan bagi semua orang.</div>
+                <div class="description" data-sila="4">Mengutamakan musyawarah dalam setiap pengambilan keputusan bersama.</div>
+                <div class="description" data-sila="5">Membantu menciptakan kesejahteraan dan kemakmuran yang merata bagi seluruh rakyat.</div>
+                <div class="description" data-sila="1">Mengakui keberadaan Tuhan sebagai pencipta alam semesta.</div>               
+            </div>
+        </div>
+        <div class="question-container">
+            <div class="question" data-question="1">
+                <p>Siapa yang menulis naskah asli Pancasila?</p>
+                <select class="answer">
+                    <option value="">Pilih jawaban</option>
+                    <option value="1">Soekarno</option>
+                    <option value="2">Mohammad Hatta</option>
+                    <option value="3">Muhammad Yamin</option>
+                    <option value="4">Soepomo</option>
+                </select>
+            </div>
+            <div class="question" data-question="2">
+                <p>Berapa jumlah sila dalam Pancasila?</p>
+                <select class="answer">
+                    <option value="">Pilih jawaban</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                </select>
+            </div>
+        </div>
+        <button id="check-answers">Periksa Jawaban</button>
+        <p id="result"></p>
+    </div>
+    <script src="pl4.js"></script>
+</body>
+</html>

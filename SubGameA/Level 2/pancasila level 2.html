@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Edukasi Pancasila Level 2</title>
+    <link rel="stylesheet" href="style/pl2.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Game Edukasi Pancasila - Level 2</h1>
+        <p>Cocokkan nama sila dengan deskripsi yang benar:</p>
+        <div class="game-container">
+            <div class="items">
+                <div draggable="true" class="item" data-sila="1">Ketuhanan yang Maha Esa</div>
+                <div draggable="true" class="item" data-sila="2">Kemanusiaan yang adil dan beradab</div>
+                <div draggable="true" class="item" data-sila="3">Persatuan Indonesia</div>
+                <div draggable="true" class="item" data-sila="4">Kerakyatan yang dipimpin oleh hikmat kebijaksanaan dalam permusyawaratan/perwakilan</div>
+                <div draggable="true" class="item" data-sila="5">Keadilan sosial bagi seluruh rakyat Indonesia</div>
+            </div>
+            <div class="descriptions">
+                <div class="description" data-sila="5">Menjaga keadilan sosial bagi seluruh rakyat Indonesia.</div>
+                <div class="description" data-sila="3">Menjaga persatuan dan kesatuan Indonesia.</div>
+                <div class="description" data-sila="1">Menyatakan kepercayaan dan ketakwaan terhadap Tuhan Yang Maha Esa.</div>
+                <div class="description" data-sila="4">Mengutamakan kepentingan negara dan masyarakat di atas kepentingan pribadi dan golongan.</div>
+                <div class="description" data-sila="2">Mengembangkan sikap saling menghormati dan bekerja sama dengan bangsa lain.</div>
+            </div>
+        </div>
+        <button id="check-match">Periksa Kecocokan</button>
+        <p id="result"></p>
+    </div>
+    <script src="logic/pl2.js"></script>
+</body>
+</html>

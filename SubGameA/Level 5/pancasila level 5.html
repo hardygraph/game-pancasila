@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Edukasi Pancasila Level 5</title>
+    <link rel="stylesheet" href="pl5.css">
+</head>
+<body>
+    <div class="container">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h1>Game Edukasi Pancasila - Level 5</h1>
+        <p>Ikuti instruksi di bawah ini untuk menyelesaikan semua tugas:</p>
+
+        <!-- Drag and Drop Section -->
+        <div class="section">
+            <h2>Cocokkan Nama Sila dengan Deskripsinya:</h2>
+            <div class="game-container">
+                <div class="items">
+                    <div draggable="true" class="item" data-sila="1">Ketuhanan yang Maha Esa</div>
+                    <div draggable="true" class="item" data-sila="2">Kemanusiaan yang adil dan beradab</div>
+                    <div draggable="true" class="item" data-sila="3">Persatuan Indonesia</div>
+                    <div draggable="true" class="item" data-sila="4">Kerakyatan yang dipimpin oleh hikmat kebijaksanaan dalam permusyawaratan/perwakilan</div>
+                    <div draggable="true" class="item" data-sila="5">Keadilan sosial bagi seluruh rakyat Indonesia</div>
+                </div>
+                <div class="descriptions">
+                    <div class="description" data-sila="1">Mempercayai adanya Tuhan dan menjalankan ibadah sesuai agama dan kepercayaannya.</div>
+                    <div class="description" data-sila="2">Menghormati dan bekerja sama dengan orang lain dengan adil.</div>
+                    <div class="description" data-sila="3">Mengutamakan persatuan dan kesatuan bangsa Indonesia.</div>
+                    <div class="description" data-sila="4">Mengutamakan musyawarah untuk mufakat dalam pengambilan keputusan.</div>
+                    <div class="description" data-sila="5">Mewujudkan kesejahteraan yang merata bagi seluruh rakyat Indonesia.</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Multiple Choice Section -->
+        <div class="section">
+            <h2>Pertanyaan Pilihan Ganda:</h2>
+            <div class="question-container">
+                <div class="question" data-question="1">
+                    <p>Siapa yang mengusulkan rumusan dasar negara yang dikenal sebagai Pancasila pada 1 Juni 1945?</p>
+                    <select class="answer">
+                        <option value="">Pilih jawaban</option>
+                        <option value="1">Soekarno</option>
+                        <option value="2">Mohammad Hatta</option>
+                        <option value="3">Muhammad Yamin</option>
+                        <option value="4">Soepomo</option>
+                    </select>
+                </div>
+                <div class="question" data-question="2">
+                    <p>Berapa jumlah sila dalam Pancasila?</p>
+                    <select class="answer">
+                        <option value="">Pilih jawaban</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fill in the Blanks Section -->
+        <div class="section">
+            <h2>Isi Kata yang Hilang:</h2>
+            <div class="fill-in-the-blanks">
+                <p>
+                    Pancasila terdiri dari ___ sila. Sila pertama berbunyi "____ yang Maha Esa". Sila kedua menekankan pentingnya ____ yang adil dan beradab. Sila ketiga mengutamakan ____ Indonesia. Sila keempat mendorong ____ yang dipimpin oleh hikmat kebijaksanaan. Sila kelima menekankan ____ sosial bagi seluruh rakyat Indonesia.
+                </p>
+                <div class="blanks">
+                    <input type="text" class="blank" data-answer="5">
+                    <input type="text" class="blank" data-answer="Ketuhanan">
+                    <input type="text" class="blank" data-answer="Kemanusiaan">
+                    <input type="text" class="blank" data-answer="Persatuan">
+                    <input type="text" class="blank" data-answer="Kerakyatan">
+                    <input type="text" class="blank" data-answer="Keadilan">
+                </div>
+            </div>
+        </div>
+
+        <button id="check-answers">Periksa Jawaban</button>
+        <p id="result"></p>
+    </div>
+    <script src="pl5.js"></script>
+</body>
+</html>

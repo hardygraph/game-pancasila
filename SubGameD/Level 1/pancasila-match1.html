@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Edukasi Pancasila - Pencocokan Gambar Level 1</title>
+    <link rel="stylesheet" href="pancasila-match1.css">
+</head>
+<body>
+    <h1>Game Edukasi Pancasila - Pencocokan Gambar Level 1</h1>
+    <div id="game-container">
+        <div id="images-container">
+            <img src="sila4.png" alt="Sila 4" class="draggable-image" data-sila="4">
+            <img src="sila1.png" alt="Sila 1" class="draggable-image" data-sila="1">
+            <img src="sila2.png" alt="Sila 2" class="draggable-image" data-sila="2">
+            <img src="sila5.png" alt="Sila 5" class="draggable-image" data-sila="5">
+            <img src="sila3.png" alt="Sila 3" class="draggable-image" data-sila="3">                      
+        </div>
+        <div id="descriptions-container">
+            <div class="droppable" data-sila="1">Ketuhanan yang Maha Esa</div>
+            <div class="droppable" data-sila="2">Kemanusiaan yang Adil dan Beradab</div>
+            <div class="droppable" data-sila="3">Persatuan Indonesia</div>
+            <div class="droppable" data-sila="4">Kerakyatan yang Dipimpin oleh Hikmat Kebijaksanaan dalam Permusyawaratan/Perwakilan</div>
+            <div class="droppable" data-sila="5">Keadilan Sosial bagi seluruh Rakyat Indonesia</div>
+        </div>
+    </div>
+    <button id="check-match">Cek Jawaban</button>
+    <div id="result"></div>
+    <script src="pancasila-match1.js"></script>
+</body>
+</html>
